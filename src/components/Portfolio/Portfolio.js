@@ -7,7 +7,7 @@ const Portfolio = () => {
     //llamada a la API utilizando axios
     useEffect(() => {
         //aca despues va la direccion de heroku pero por el momento uso el local
-        axios.get('http://localhost:8080/portfolio')
+        axios.get('https://backend-ale-portfolio.herokuapp.com/portfolio')
         .then(
             res => setProjects(res.data)
         )}, [setProjects]);

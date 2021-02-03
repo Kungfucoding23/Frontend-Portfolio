@@ -7,7 +7,7 @@ const About = () => {
     //llamada a la API utilizando axios
     useEffect(() => {
         //aca despues va la direccion de heroku pero por el momento uso el local
-        axios.get('http://localhost:8080/about')
+        axios.get('https://backend-ale-portfolio.herokuapp.com/about')
         .then(
             res => setInfo(res.data[0])
         )}, [setInfo]);
