@@ -9,7 +9,7 @@ const Portfolio = () => {
         //aca despues va la direccion de heroku pero por el momento uso el local
         axios.get('http://localhost:8080/portfolio')
         .then(
-            res => setProjects(res.data[0])
+            res => setProjects(res.data)
         )}, [setProjects]);
     return(
         <>
